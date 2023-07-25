@@ -1,7 +1,7 @@
 name: camera_azimuth
 description: camera_azimuth
-version: 0.0.1
-homepage:
+version: 0.0.2
+homepage: https://github.com/yaolv7/camera_azimuth
 
 environment:
   sdk: '>=3.0.6 <4.0.0'

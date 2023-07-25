@@ -1,7 +1,6 @@
-
 import 'camera_azimuth_platform_interface.dart';
 
-class CameraAzimuth extends CameraAzimuthPlatform{
+class CameraAzimuth {
   factory CameraAzimuth() => _singleton ??= CameraAzimuth._();
 
   CameraAzimuth._();
@@ -11,8 +10,7 @@ class CameraAzimuth extends CameraAzimuthPlatform{
   static CameraAzimuthPlatform get _platform => CameraAzimuthPlatform.instance;
 
   /// A broadcast stream of events from the device accelerometer.
-  @override
-  Stream<AzimuthEvent> get azimuthEvents {
+  static Stream<AzimuthEvent> get azimuthEvents {
     return _platform.azimuthEvents;
   }
 }

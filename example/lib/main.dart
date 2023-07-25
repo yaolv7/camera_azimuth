@@ -16,13 +16,12 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  final _cameraAzimuthPlugin = CameraAzimuth();
   StreamSubscription<AzimuthEvent>? _sensorSubscription;
   String? _info;
 
   @override
   void initState() {
-    _sensorSubscription = _cameraAzimuthPlugin.azimuthEvents.listen((event) {
+    _sensorSubscription = CameraAzimuth.azimuthEvents.listen((event) {
       setState(() {
         _info = event.toString();
       });
