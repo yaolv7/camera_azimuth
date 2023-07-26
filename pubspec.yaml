@@ -1,6 +1,6 @@
 name: camera_azimuth
 description: camera_azimuth
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/yaolv7/camera_azimuth
 
 environment:
